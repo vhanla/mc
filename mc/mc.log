@@ -1,0 +1,29 @@
+McSoft Desktop Window Organizer (Windows a00) at 5/7/2019 16:38:45
+
+Desktop Rect: 0,0  1366,768
+Monitor Rect: 0,0 1366,768
+Working Rect: 0,0 1366,728
+"ApplicationFrameHost" WIN 1e04ba, 2c16d2 PID 14132[6992] CLASS ApplicationFrameWindow  
+    pile=2    origin (81, 65) width 816 height 641  [Z=304]     content (0, 0) width 816 height 641
+"firefox" WIN b80808, 9048a PID 17008[7792] CLASS MozillaWindowClass  MAXIMIZED 
+    pile=1    origin (0, 0) width 1366 height 728  [Z=295]     content (8, 8) width 1366 height 728
+"ApplicationFrameHost" WIN 571466, 93062a PID 14132[13444] CLASS ApplicationFrameWindow  
+    pile=2    origin (125, 33) width 816 height 641  [Z=292]     content (0, 0) width 816 height 641
+"ApplicationFrameHost" WIN fd14e4, 150594 PID 14132[22056] CLASS ApplicationFrameWindow  
+    pile=2    origin (272, 62) width 816 height 641  [Z=290]     content (0, 0) width 816 height 641
+"ApplicationFrameHost" WIN 650ea6, 6c0c1e PID 14132[17144] CLASS ApplicationFrameWindow  MAXIMIZED 
+    pile=2    origin (0, 0) width 1366 height 728  [Z=286]     content (8, 8) width 1366 height 728
+"ApplicationFrameHost" WIN 771600, 1c1536 PID 14132[9908] CLASS ApplicationFrameWindow  
+    pile=2    origin (121, 0) width 888 height 641  [Z=281]     content (0, 0) width 888 height 641
+"firefox" WIN 16144c, b914dc PID 17008[7792] CLASS MozillaWindowClass  MAXIMIZED 
+    pile=1    origin (0, 0) width 1366 height 728  [Z=246]     content (8, 8) width 1366 height 728
+"explorer" WIN 3033e, 5c0ea8 PID 16076[11360] CLASS ApplicationFrameWindow  MAXIMIZED 
+    pile=5    origin (0, 0) width 1366 height 768  [Z=219]     content (0, 0) width 1366 height 768
+"mpc-be64" WIN 32152c, 191716 PID 8268[8264] CLASS MPC-BE  
+    pile=6    origin (455, 204) width 457 height 320  [Z=217]     content (0, 0) width 457 height 320
+"SketchUp" WIN 60fee, 2b13f4 PID 16576[15356] CLASS Afx:00007FF779230000:b:0000000000010003:0000000000000006:0000000019670DF1  MINIMIZED MAXIMIZED 
+    pile=4    origin (0, 0) width 1366 height 768  [Z=207]     content (8, 8) width 1366 height 768
+"firefox" WIN 191450, 940c08 PID 17008[7792] CLASS MozillaWindowClass  MAXIMIZED 
+    pile=1    origin (0, 0) width 1366 height 728  [Z=151]     content (8, 8) width 1366 height 728
+"devenv" WIN 930504, 4a0dc6 PID 22012[13076] CLASS HwndWrapper[DefaultDomain;;61946bf4-13a7-434f-bb61-694e47d0a256]  MAXIMIZED 
+    pile=3    origin (0, 0) width 1366 height 728  [Z=141]     content (8, 8) width 1366 height 728

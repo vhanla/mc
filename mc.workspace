@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="mc" Database="">
+  <Project Name="mc" Path="mc/mc.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="mc" ConfigName="Debug_Win32"/>
+      <Project Name="mc" ConfigName="Debug_x64"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="mc" ConfigName="Release_Win32"/>
+      <Project Name="mc" ConfigName="Release_x64"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

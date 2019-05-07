@@ -1,0 +1,5 @@
+#define IDI_MC 101
+#define IDI_BITM 102
+
+IDI_MC       	ICON					"mc.ico"
+IDI_BITM	 	BITMAP					"mc.bmp"

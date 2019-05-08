@@ -20,6 +20,7 @@
 #include "McAnimation.h"
 
 #include <winuser.h>
+#include "ProcInfo.cpp"
 
 WindowList::WindowList()
 {
@@ -136,10 +137,37 @@ void WindowList::handleNextWindow(HWND hwnd)
 		return;
 
 	if (strstr(className, "SideBar_HTMLHostWindow")) return;
-
+	
 	DWORD threadId, processId;
 	HINSTANCE hi = (HINSTANCE)GetWindowLong(hwnd, GWL_HINSTANCE);
 	threadId = GetWindowThreadProcessId(hwnd, &processId);
+
+	// Hide UWP applications
+	if (strstr(className, "ApplicationFrameWindow")) {
+		return;
+		// Find suspended UWP apps
+		//  #TODO Doesn't work since UWP apps seems to run in a different thread the its container, dunno
+		cProcInfo i_Proc;
+		DWORD u32_Error = i_Proc.Capture();
+		if (!u32_Error)
+		{
+			SYSTEM_PROCESS* pk_Proc = i_Proc.FindProcessByPid(processId);
+			if (pk_Proc)
+			{
+				SYSTEM_THREAD* pk_Thread = i_Proc.FindThreadByTid(pk_Proc, threadId);
+				if (pk_Thread)
+				{
+					BOOL b_Suspended;
+					i_Proc.IsThreadSuspended(pk_Thread, &b_Suspended);
+					if (b_Suspended)
+						return;
+				}
+			}
+		}
+
+
+	}
+
 
 	WINDOWINFO info = {};
 	GetWindowInfo(hwnd, &info);

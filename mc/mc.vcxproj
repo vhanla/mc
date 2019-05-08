@@ -151,6 +151,7 @@
     <ClCompile Include="McAnimation.cpp" />
     <ClCompile Include="McPiles.cpp" />
     <ClCompile Include="McProps.cpp" />
+    <ClCompile Include="ProcInfo.cpp" />
     <ClCompile Include="ThumbWindow.cpp" />
     <ClCompile Include="WindowItem.cpp" />
     <ClCompile Include="WindowList.cpp" />

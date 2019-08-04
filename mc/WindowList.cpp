@@ -144,6 +144,10 @@ void WindowList::handleNextWindow(HWND hwnd)
 
 	// Hide UWP applications
 	if (strstr(className, "ApplicationFrameWindow")) {
+		// Analyze cloaking status and exclude cloaked ones
+		int cloaked;
+		DwmGetWindowAttribute(hwnd, DWMWA_CLOAKED, &cloaked, sizeof(int));
+		if (cloaked != 0)
 		return;
 		// Find suspended UWP apps
 		//  #TODO Doesn't work since UWP apps seems to run in a different thread the its container, dunno

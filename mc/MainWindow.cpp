@@ -218,7 +218,8 @@ void MainWindow::onTransitionOver()
 		item->registerThumbnail(FALSE, WIL_MAIN_WINDOW, TRUE);
 		item->showThumbnail();
 		item->closeThumbWindow();
-		SetForegroundWindow(main);
+		// SetForegroundWindow(main);
+		SwitchToThisWindow(main, TRUE);
 		if (oldThumb) item->unregisterThumbnail(oldThumb);
 	}
 
